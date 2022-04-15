@@ -1,0 +1,54 @@
+<mat-card>
+  <h1>
+    Profile
+  </h1>
+</mat-card>
+<mat-card>
+      <form [formGroup]='createForm' (ngSubmit)="save()">
+
+        <mat-form-field appearance="fill">
+          <mat-label>ID</mat-label>
+          <input name="id" formControlName='id' matInput>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Ism</mat-label>
+          <input name="ism" formControlName='ism' matInput>
+        </mat-form-field>
+        &nbsp;&nbsp;&nbsp;
+        <mat-form-field appearance="fill">
+          <mat-label>Familiya</mat-label>
+          <input name="familiya" formControlName='familiya' matInput>
+        </mat-form-field> 
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Sharif</mat-label>
+          <input name="sharif" formControlName='sharif' matInput>
+        </mat-form-field>
+        &nbsp;&nbsp;&nbsp;
+        <mat-form-field appearance="fill">
+          <mat-label>Login</mat-label>
+          <input name="login" formControlName='login' matInput>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Eski parol</mat-label>
+          <input name="eskiParol" formControlName='eskiParol' matInput>
+        </mat-form-field>
+        &nbsp;&nbsp;&nbsp;
+        <mat-form-field appearance="fill">
+          <mat-label>Yangi parol</mat-label>
+          <input name="parol" formControlName='parol' matInput>
+        </mat-form-field>
+        <br>
+        <button type="submit" [disabled]='createForm.invalid || sorovBajarilmoqda' mat-raised-button color="primary">
+          <mat-icon>add</mat-icon>
+          Saqlash
+        </button>
+        <button type="button" mat-raised-button color="warn">
+          <mat-icon>clear</mat-icon>
+          Bekor qilish
+        </button>
+      </form>
+
+</mat-card>

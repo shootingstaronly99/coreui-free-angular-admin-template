@@ -1,0 +1,15 @@
+<h2>Arizaning mazmumuni</h2>
+<p>
+    {{mazmun}}
+</p>
+<h1 mat-dialog-title>Video murojaat</h1>
+<div mat-dialog-content>
+    <video width="100%" controls>
+        <source [src]="url">
+            
+      </video>
+    </div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Yopish</button>
+    <a mat-button mat-dialog-close [href]="url" target="_blank">Yuklash</a>
+</div>
