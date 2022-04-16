@@ -24,6 +24,7 @@ import {
   ButtonGroupModule,
   ButtonModule,
   CardModule,
+  CarouselModule,
   DropdownModule,
   FooterModule,
   FormModule,
@@ -86,6 +87,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BadgeModule,
     ListGroupModule,
     CardModule,
+    CarouselModule,
+
+
    
     
   ],
@@ -95,10 +99,10 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
       useClass: JwtInterceptor,
       multi: true
     },
-    // {
-    //   provide: LocationStrategy,
-    //   useClass: HashLocationStrategy,
-    // },
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy,
+    },
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,

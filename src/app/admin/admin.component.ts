@@ -1,5 +1,8 @@
+import { literalMap } from '@angular/compiler';
+import { taggedTemplate } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { INavData } from '@coreui/angular';
+import { __extends } from 'tslib';
 import { ViloyatService } from '../shared/service/viloyat.service';
 
 
@@ -13,27 +16,49 @@ export class AdminComponent implements OnInit {
     {
       name: 'Bosh sahifa',
       url: '/dashboard',
-      iconComponent: { name: 'cil-speedometer' },
-      badge: {
-        color: 'info',
-        text: 'NEW'
-      }
+      iconComponent: { name: 'cil-home' },
+      // badge: {
+      //   color: 'info',
+      //   text: 'NEW'
+      // }
     },
-    // {
-    //   title: true,
-    //   name: 'Hududlar'
-    // },
-    // {
-    //   name: 'Colors',
-    //   url: '/theme/colors',
-    //   iconComponent: { name: 'cil-drop' }
-    // },
-    // {
-    //   name: 'Typography',
-    //   url: '/theme/typography',
-    //   linkProps: { fragment: 'someAnchor' },
-    //   iconComponent: { name: 'cil-pencil' }
-    // },
+    {
+      title: true,
+      name: "Bo'limlar"
+    },
+    {
+      name: 'Tadbirkorlik',
+      url: 'subject',
+      iconComponent: { name: 'cil-bank' }
+    },
+    {
+      name: 'Xodimlar',
+      url: 'hodim',
+      iconComponent: { name: 'cil-user' }
+    },
+    {
+      name: 'Tashkilotlar',
+      url: 'tashkilot',
+      iconComponent: { name: 'cil-institution' }
+    },
+    {
+      name: 'Elonlar',
+      url: 'elon',
+      iconComponent: { name: 'cil-envelope-closed' }
+    },
+    {
+      name: 'Aloqa',
+      url: 'chat',
+      iconComponent: { name: 'cil-comment-bubble' }
+    },
+    {
+      name: 'Online Mahalla',
+      url: 'https://www.online-mahalla.uz/login ',
+
+      iconComponent: { name: 'cil-external-link' }
+    },
+    
+    
     // {
     //   name: 'Components',
     //   title: true
@@ -304,7 +329,7 @@ export class AdminComponent implements OnInit {
             tumanlar.push({
               name: t.name,
               url: "tuman/" + t.id,
-              iconComponent: { name: 'cil-institution' },
+              iconComponent: { name: 'cil-house' },
               children: sektorlar
             })
 
@@ -312,7 +337,7 @@ export class AdminComponent implements OnInit {
           viloyatlar.push({
             name: v.name,
             url: 'viloyat/' + v.id,
-            iconComponent: { name: 'cil-industry' },
+            iconComponent: { name: 'cil-home' },
             children: tumanlar
           })
         }

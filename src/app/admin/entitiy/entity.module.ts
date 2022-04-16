@@ -15,6 +15,7 @@ import { MahallaComponent } from './mahalla/mahalla.component';
 import { SektorComponent } from './sektor/sektor.component';
 import { MaterialModule } from './../../shared/material/material.module';
 import { MatCardModule } from '@angular/material/card';
+import { XodimComponent } from './xodim/xodim.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MatCardModule } from '@angular/material/card';
     ViloyatComponent,
     MahallaComponent,
     SektorComponent,
+    XodimComponent,
   ],
   imports: [
     CommonModule,

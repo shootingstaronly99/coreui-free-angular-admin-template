@@ -6,8 +6,8 @@
           <c-card class="p-4">
             <c-card-body>
               <form cForm [formGroup]="loginForm" (ngSubmit)="onLogin()">
-                <h1>Login</h1>
-                <p class="text-medium-emphasis">Sign In to your account</p>
+                <h1>Kirish </h1>
+                <p class="text-medium-emphasis">Admin panelga kirish</p>
                 <c-input-group class="mb-3">
                   <span cInputGroupText>
                     <svg cIcon name="cilUser"></svg>
@@ -29,12 +29,12 @@
                 <c-row>
                   <c-col xs="6">
                     <button type="submit"cButton class="px-4" color="primary">
-                      Login
+                      Kirish
                     </button>
                   </c-col>
                   <c-col class="text-right" xs="6">
                     <button cButton class="px-0" color="link">
-                      Forgot password?
+                    Parolni unutdingizmi?
                     </button>
                   </c-col>
                 </c-row>
@@ -44,14 +44,13 @@
           <c-card [ngStyle]="{'width.%': 44}" class="text-white bg-primary py-5">
             <c-card-body class="text-center">
               <div>
-                <h2>Sign up</h2>
+                <h2>Inson qadri</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.
+                 Inson-qadri.uz tizimi boshqaruvchilari uchun kirish joyi
                 </p>
-                <button [active]="true" cButton class="mt-3" color="primary" routerLink="/register">
+                <!-- <button [active]="true" cButton class="mt-3" color="primary" routerLink="/register">
                   Register Now!
-                </button>
+                </button> -->
               </div>
             </c-card-body>
           </c-card>

@@ -25,40 +25,40 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
   data: any[] = [];
   options: any[] = [];
   labels = [
-    'January',
-    'February',
-    'March',
+    'Yanvar',
+    'Fevral',
+    'Mart',
     'April',
     'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-    'January',
-    'February',
-    'March',
+    'Iyun',
+    'Iyul',
+    'Auvgust',
+    'Sentabr',
+    'Oktabr',
+    'Noyabr',
+    'Dekabr',
+    'Yanvar',
+    'Fevral',
+    'Mart',
     'April'
   ];
   datasets = [
     [{
-      label: 'My First dataset',
+      label: 'Birinchi',
       backgroundColor: 'transparent',
       borderColor: 'rgba(255,255,255,.55)',
       pointBackgroundColor: getStyle('--cui-primary'),
       pointHoverBorderColor: getStyle('--cui-primary'),
       data: [65, 59, 84, 84, 51, 55, 40]
     }], [{
-      label: 'My Second dataset',
+      label: 'Ikkinchi dataset',
       backgroundColor: 'transparent',
       borderColor: 'rgba(255,255,255,.55)',
       pointBackgroundColor: getStyle('--cui-info'),
       pointHoverBorderColor: getStyle('--cui-info'),
       data: [1, 18, 9, 17, 34, 22, 11]
     }], [{
-      label: 'My Third dataset',
+      label: 'Uchinchi dataset',
       backgroundColor: 'rgba(255,255,255,.2)',
       borderColor: 'rgba(255,255,255,.55)',
       pointBackgroundColor: getStyle('--cui-warning'),
@@ -66,7 +66,7 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
       data: [78, 81, 80, 45, 34, 12, 40],
       fill: true
     }], [{
-      label: 'My Fourth dataset',
+      label: " To'rtinchidataset",
       backgroundColor: 'rgba(255,255,255,.2)',
       borderColor: 'rgba(255,255,255,.55)',
       data: [78, 81, 80, 45, 34, 12, 40, 85, 65, 23, 12, 98, 34, 84, 67, 82],

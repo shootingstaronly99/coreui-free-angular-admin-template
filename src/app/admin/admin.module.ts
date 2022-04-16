@@ -19,12 +19,14 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 
 import {
+  AccordionModule,
   AvatarModule,
   BadgeModule,
   BreadcrumbModule,
   ButtonGroupModule,
   ButtonModule,
   CardModule,
+  CarouselModule,
   DropdownModule,
   FooterModule,
   FormModule,
@@ -39,6 +41,7 @@ import {
   TabsModule,
   UtilitiesModule,
 } from '@coreui/angular';
+// import { AccordionModule } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
 import { HttpClientModule } from '@angular/common/http';
@@ -51,6 +54,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ChartjsModule } from '@coreui/angular-chartjs';
 
 import { WidgetsModule } from '../views/widgets/widgets.module';
+import { RequestComponent } from './components/request/request.component';
+import { SubjectComponent } from './components/subject/subject.component';
+import { XodimComponent } from './components/xodim/xodim.component';
+import { TashkilotComponent } from './components/tashkilot/tashkilot.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { ElonComponent } from './components/elon/elon.component';
 
 
 @NgModule({
@@ -65,6 +74,14 @@ import { WidgetsModule } from '../views/widgets/widgets.module';
     MyheaderComponent,
     MyfooterComponent,
     DashboardComponent,
+    RequestComponent,
+    SubjectComponent,
+    XodimComponent,
+    TashkilotComponent,
+    ChatComponent,
+    ElonComponent,
+    
+    // AccordionModule
 
   ],
   imports: [
@@ -107,7 +124,8 @@ import { WidgetsModule } from '../views/widgets/widgets.module';
         ChartjsModule,
         AvatarModule,
         TableModule,
-        WidgetsModule
+        WidgetsModule,
+        CarouselModule
   ],
   providers: [
     {
